@@ -43,6 +43,18 @@ ul li a {
 .nav-link {
   position: relative;
 }
+.nav-link:hover {
+  color: #36a37d;
+}
+#nav_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.nav-link {
+  color: white;
+}
 .nav-link::before {
   content: '';
   position: absolute;
@@ -50,9 +62,264 @@ ul li a {
   left: 0;
   width: 0%;
   height: 3px;
-  background-color: red;
+  background-color: #36a37d;
   transition: all linear 0.4s;
+  transition: all linear 0.3s;
 }
 .nav-link:hover::before {
   width: 100%;
+  color: #36a37d;
 }
+
+.nav_button {
+  width: 170px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 3px solid var(--Base-color, #36a37d);
+  /* background: var(--Text-color, #fff); */
+  color: var(--Base-color, #36a37d);
+  font-family: Kalpurush;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@font-face {
+  font-family: 'Kalpurush';
+  src: url('../font/kalpurush.ttf');
+}
+
+/* banner start  */
+#banner {
+  background: linear-gradient(rgba(3, 3, 3, 0.7), rgba(3, 3, 3, 0.7)),
+    url('../img/banner.jpg');
+  /* height: 600px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 192px;
+  padding-bottom: 97px;
+}
+.heading_banner {
+  text-align: center;
+}
+.heading_banner p {
+  color: #fff;
+  text-align: center;
+  font-family: Kalpurush;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+  padding: 0px 343px;
+  margin-top: 137px;
+  margin-bottom: 137px;
+}
+.srach_hadding h2 {
+  color: var(--Text-color, #fff);
+  font-family: Kalpurush;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.input_are {
+  width: 770px;
+  height: 86px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--Text-color, #fff);
+  margin: 0px auto;
+}
+.input_parent {
+  /* position: relative; */
+  /* display: flex; */
+  /* align-items: center; */
+}
+.input_parent input {
+  width: 544px;
+  border: none;
+  outline: none;
+  padding-top: 28px;
+  margin-bottom: 28px;
+  border-radius: 12px;
+  padding-left: 37px;
+  padding-right: 15px;
+  /* color: #a9a3b7; */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.input_are button {
+  display: flex;
+  padding: 21px 27px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0px 12px 12px 0px;
+  background: var(--Base-color, #36a37d);
+  border: none;
+  color: white;
+  position: relative;
+  color: #fff;
+  font-family: Kalpurush;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.input_are button .filter {
+  position: absolute;
+  left: -57px;
+  top: 33px;
+}
+
+/* banner end */
+/* about part start  */
+#about_section {
+  background-image: url('../img/about-back.png');
+  /* height: 600px; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+.about_heading {
+  text-align: center;
+}
+.about_heading h2 {
+  color: var(--Base-color, #36a37d);
+  font-family: Kalpurush;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.about_heading p {
+  color: #626d7d;
+  text-align: center;
+  font-family: Kalpurush;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+  padding: 0px 263px;
+  margin-bottom: 46px;
+}
+.card_1 {
+  width: 370px;
+  height: 405px;
+  flex-shrink: 0;
+  background-color: red;
+}
+.card_wrapper {
+  column-gap: 30px;
+  padding-bottom: 146px;
+  position: relative;
+  box-sizing: border-box;
+}
+.card_1 {
+  position: relative;
+  border-radius: 12px;
+  background: var(--Text-color, #fff);
+  max-width: 370px;
+  height: 424px;
+  flex-shrink: 0;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+  transition: all linear 0.4s;
+}
+.card_1::after {
+  content: '';
+  background: url('../img/bukary.svg');
+  /* background-color: black; */
+  width: 170px;
+  height: 155px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.card_1::before {
+  content: '';
+  background: url('../img/bukary_2.svg');
+  /* background-color: black; */
+  width: 170px;
+  height: 155px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.card_main_text {
+  width: 358px;
+  height: 413px;
+  flex-shrink: 0;
+  /* background-color: green; */
+  /* margin: 6px; */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: -5px;
+  margin-top: 5px;
+  border-radius: 12px;
+  transition: all linear 0.3s;
+}
+.card_main_text h3 {
+  color: var(--Base-color, #36a37d);
+  text-align: center;
+  font-family: Kalpurush;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+.card_main_text p {
+  color: #626d7d;
+  text-align: center;
+  font-family: Kalpurush;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.card_main_text:hover {
+  border: 1px solid white;
+}
+.card_1:hover .card_main_text h3 {
+  color: white;
+}
+.card_1:hover .card_main_text p {
+  color: white;
+}
+.card_1:hover {
+  background-color: #36a37d;
+  transform: translateY(-8px);
+}
+.abouta_btn {
+  text-align: center;
+  padding: 0 409px;
+}
+.abouta_btn button {
+  width: 277px;
+  height: 62px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--Base-color, #36a37d);
+  border: none;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  justify-content: center;
+  color: white;
+}
+/* about part end */
