@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <!-- main css link in web site  -->
   <link rel="stylesheet" href="./css/style.css">
+  <!-- responsive css link in the web page -->
+  <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -22,13 +24,14 @@
   <!-- navBar start  -->
   <nav class="navbar navbar-expand-lg" id="nav_bg">
     <div class="container">
+      <a class="navbar-brand img" href="#">
+        <img src="./img/Logo.svg" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-white"></span>
       </button>
-      <a class="navbar-brand img" href="#">
-        <img src="./img/Logo.svg" alt="">
-      </a>
+
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -70,7 +73,6 @@
             <img src="./img/input_icon.svg" class="filter" alt="filter">
             সার্চ করুন
             <img src="./img/Search icon.svg" alt="Search">
-            <!-- <i class="fa-light fa-magnifying-glass"></i> -->
           </button>
 
         </div>
@@ -191,8 +193,9 @@
                 আমাদের অ্যাপটি ডাউনলোড করুন</p>
             </div>
           </div>
-          <div class="coll_to_actions d-flex align-items-center justify-content-center">
-            <div class="coll_button_child_one">
+          <div
+            class="coll_to_actions d-flex align-items-center justify-content-center action_button  flex-column flex-lg-row">
+            <div class="coll_button_child_one mb-3 mb-lg-0">
               <button class="main_button_in_icon">
                 <img src="./img/play.png" alt="">
                 <div class="button_text text-start">
@@ -235,7 +238,7 @@
 
           </div>
           <div class="col-lg-7">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between flex-column flex-lg-row">
               <div class="">
                 <div class="footer_menu_parent d-flex align-items-center">
                   <ul>

@@ -1,0 +1,23 @@
+@media (max-width: 576.99px) {
+  .heading_banner p {
+    padding: 0px;
+  }
+  .input_parent input {
+    width: 0px;
+  }
+  .input_are {
+    width: 360px;
+  }
+  .abouta_btn {
+    padding: 0px;
+  }
+  .about_heading p {
+    padding: 0px;
+  }
+  .info h3 {
+    padding: 0px;
+  }
+  .card_button {
+    padding: 0px;
+  }
+}
