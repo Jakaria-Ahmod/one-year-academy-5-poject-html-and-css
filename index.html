@@ -27,12 +27,45 @@
       <a class="navbar-brand img" href="#">
         <img src="./img/Logo.svg" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-white"></span>
-      </button>
+      </button> -->
+      <div class="d-lg-none">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="d-lg-none">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">হোম</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">হাদিসে যান</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">হাদিস গ্রন্থসমূহ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">আমাদের প্রজেক্ট</a>
+                </li>
+              </ul>
+              <button type="button" class="nav_button">সাপোর্ট করুন
+                <img src="./img/donaton.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse d-lg-block" id="navbarTogglerDemo03">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">হোম</a>
@@ -51,7 +84,6 @@
           <img src="./img/donaton.svg" alt="">
         </button>
       </div>
-    </div>
   </nav>
   <!-- navBar end  -->
 
@@ -65,12 +97,13 @@
       </div>
       <div class="srach_hadding">
         <h2>আপনার পছন্দের হাদিস খুঁজুন</h2>
-        <div class="input_are d-flex justify-content-between">
-          <div class="input_parent">
+        <div class="input_are d-flex justify-content-between flex-column flex-lg-row">
+          <div class="input_parent d-flex align-items-center justify-content-around mb-2 mb-lg-0">
             <input type="text" id="input" name="input" placeholder="সার্চ হাদিস...">
+            <img src="./img/input_icon.svg" class="filter d-lg-none HI_filter" alt="filter">
           </div>
-          <button class="d-flex">
-            <img src="./img/input_icon.svg" class="filter" alt="filter">
+          <button class="d-flex align-items-center justify-content-center rounded">
+            <img src="./img/input_icon.svg" class="filter d-none d-lg-block" alt="filter">
             সার্চ করুন
             <img src="./img/Search icon.svg" alt="Search">
           </button>
@@ -88,14 +121,14 @@
         <p>হাদিসের কিতাবগুলো মুসলিমদের জন্য হেদায়েত এবং অনুপ্রেরণার একটি গুরুত্বপূর্ণ উৎস। এই কিতাবগুলো মহানবী
           মুহাম্মদ (সাল্লাল্লাহু আলাইহি ওয়া সালাম)-এর সীরাত(জীবনী) ও দিক-নির্দেশনার প্রতি অন্তর্দৃষ্টি প্রদান করে।</p>
       </div>
-      <div class="card_wrapper row">
-        <div class="card_1 lg-col-4">
+      <div class="card_wrapper row mx-auto justify-content-center">
+        <div class="card_1 lg-col-4 mb-4 mb-lg-0">
           <div class="card_main_text">
             <h3>সহিহ বুখারি</h3>
             <p>হাদিসের রেঞ্জ ৭৫৬৩</p>
           </div>
         </div>
-        <div class="card_1 lg-col-4">
+        <div class="card_1 lg-col-4 mb-4 mb-lg-0">
           <div class="card_main_text">
             <h3>সহিহ মুসলিম</h3>
             <p>হাদিসের রেঞ্জ ৭০৫৩</p>
@@ -108,7 +141,7 @@
           </div>
         </div>
       </div>
-      <div class="abouta_btn">
+      <div class="abouta_btn d-flex align-items-center justify-content-center">
         <button>
           <img src="./img/book.svg" alt="book_img">
           <span>সকল হাদিস গ্রন্থসমূহ</span>
@@ -144,30 +177,32 @@
         </div>
       </div>
       <div class="card_container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card_child d-flex align-items-center justify-content-center flex-column">
-              <h3>আকিদা</h3>
-              <p>হাদিসের রেঞ্জঃ ৭</p>
+        <div class="main_wepper_incard">
+          <div class="row align-items-center mx-auto">
+            <div class="col-lg-4 d-flex align-items-center justify-content-center">
+              <div class="card_child d-flex align-items-center justify-content-center flex-column">
+                <h3>আকিদা</h3>
+                <p>হাদিসের রেঞ্জঃ ৭</p>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card_child d-flex align-items-center justify-content-center flex-column">
-              <h3>ঈমান</h3>
-              <p>হাদিসের রেঞ্জঃ ৫</p>
+            <div class="col-lg-4 d-flex align-items-center justify-content-center">
+              <div class="card_child d-flex align-items-center justify-content-center flex-column">
+                <h3>ঈমান</h3>
+                <p>হাদিসের রেঞ্জঃ ৫</p>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card_child d-flex align-items-center justify-content-center flex-column">
-              <h3>সালাত</h3>
-              <p>হাদিসের রেঞ্জঃ ৩৮</p>
+            <div class="col-lg-4 d-flex align-items-center justify-content-center">
+              <div class="card_child d-flex align-items-center justify-content-center flex-column">
+                <h3>সালাত</h3>
+                <p>হাদিসের রেঞ্জঃ ৩৮</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="card_button">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-flex align-items-center justify-content-center">
             <button>
               <img src="./img/book_in.svg" alt="book_img">
               <span>সকল ক্যাটাগরি দেখুন</span>
@@ -265,7 +300,7 @@
                   <li><a href="#">আইআরডি ফাউনডেসন</a></li>
                 </ul>
               </div>
-              <div class="footer_menu_parent" id="web_site_name">
+              <div class="footer_menu_parent last_footer_mobile" id="web_site_name">
                 <h4 class="last_h4">জনপ্রিয় সাইটসমূহ</h4>
                 <li><a href="#">Quran.com</a></li>
                 <li><a href="#">Sunnah.com</a></li>

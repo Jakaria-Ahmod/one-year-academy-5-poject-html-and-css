@@ -220,7 +220,7 @@ ul li a {
 }
 .card_wrapper {
   column-gap: 30px;
-  padding-bottom: 146px;
+  padding-bottom: 70px;
   position: relative;
   box-sizing: border-box;
 }
@@ -431,8 +431,8 @@ ul li a {
   justify-content: center;
   color: white;
   margin-top: 52px;
-  margin-left: 76px;
-  margin-bottom: 72px;
+  margin-left: 306px;
+  /* margin-bottom: 72px; */
 }
 /* all_hadis end */
 
