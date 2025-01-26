@@ -212,6 +212,9 @@ ul li a {
   padding: 0px 263px;
   margin-bottom: 46px;
 }
+.second_footer_ul_menu {
+  margin-right: 15px;
+}
 .card_1 {
   width: 370px;
   height: 405px;
@@ -223,6 +226,7 @@ ul li a {
   padding-bottom: 70px;
   position: relative;
   box-sizing: border-box;
+  justify-content: center;
 }
 .card_1 {
   position: relative;
